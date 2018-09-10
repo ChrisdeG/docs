@@ -26,12 +26,12 @@ function createEntitiy(domainModel : domainmodels.DomainModel, entityName : stri
 	domainModel.entities.push(newEntity);
 
 	// location on the canvas in the Mendix Modeler:
-	newEntity.location = { 'x': 100, 'y': 100 };
+	newEntity.location = { x: 100, y: 100 };
 
-    // new attribute (which is by default a string attribute):
-    const newAttribute = domainmodels.Attribute.createIn(newEntity);
+    	// new attribute (which is by default a string attribute):
+    	const newAttribute = domainmodels.Attribute.createIn(newEntity);
 	newAttribute.name = attributeName;
-	newEntity.attributes.push(newAttribute);
+	
 }
 ```
 
